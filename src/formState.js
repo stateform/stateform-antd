@@ -147,7 +147,7 @@ export default {
           },
           label: '',
           required: true,
-          error: 'requred',
+          error: 'required',
           placeholder: 'first name'
         },
         {
