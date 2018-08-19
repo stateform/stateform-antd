@@ -1,8 +1,8 @@
 {
   "name": "@stateform/antd",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "William17 <superbill2012@qq.com> https://github.com/William17",
-  "main": "build/stateform-antd.js",
+  "main": "dist/stateform-antd.js",
   "description": "StateForm implementation of Antd",
   "keywords": [
     "stateform",
@@ -11,7 +11,7 @@
     "generator"
   ],
   "files": [
-    "build/"
+    "dist/"
   ],
   "peerDependencies": {
     "antd": "^3.8.1",
