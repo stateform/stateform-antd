@@ -21,6 +21,10 @@ const StateForm = createStateForm({
 // e.g., <StateForm state={yourFormState} />
 ```
 
+## Playground  
+
+[![Edit StateForm of Antd Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/lx8q1143mz?module=%2Fsrc%2FformState.js)
+
 ## Install   
 ```sh  
 npm install @stateform/antd  --save
@@ -28,6 +32,7 @@ npm install @stateform/antd  --save
 `react` and `antd` are peerDependencies
 
 ## API  
+see [StateForm](https://github.com/stateform/StateForm-Specification)
 
 ## TODO  
 * test
