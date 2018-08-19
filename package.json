@@ -1,15 +1,17 @@
 {
   "name": "@stateform/antd",
-  "version": "0.1.2",
+  "version": "0.1.2-3",
   "author": "William17 <superbill2012@qq.com> https://github.com/William17",
   "main": "dist/stateform-antd.js",
   "description": "StateForm implementation of Antd",
   "keywords": [
     "stateform",
+    "react",
     "antd",
     "form",
     "generator"
   ],
+  "license": "MIT",
   "files": [
     "dist/"
   ],
