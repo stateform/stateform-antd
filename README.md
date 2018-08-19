@@ -4,6 +4,7 @@ StateForm implementation of Antd@^3.8.1
 ```js  
 import 'antd/dist/antd.css'
 import createStateForm from '@stateform/antd'
+import "@stateform/antd/dist/stateform-antd.css"
 
 const StateForm = createStateForm({
   upload: {
@@ -18,7 +19,7 @@ const StateForm = createStateForm({
 })
 
 // now you can use StateForm as a component in react 
-// e.g., <StateForm state={yourFormState} />
+// e.g., <StateForm state={yourFormState} onInput={inputHandler} onSubmit={submitHandler} />
 ```
 
 ## Playground  
