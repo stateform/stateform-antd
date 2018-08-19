@@ -44,7 +44,7 @@ class App extends Component {
   render() {
     return (
       <div className="main-form">
-        <h1 className="main-form__title"> Test Form</h1>
+        <h1 className="main-form__title"> StateForm</h1>
         <StateForm
           state={this.state.formState}
           onInput={this.handleInput}

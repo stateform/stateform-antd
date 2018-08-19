@@ -161,7 +161,7 @@ export default {
           },
           label: '',
           required: true,
-          //                error: 'This field is requred',
+          // error: 'This field is required',
           placeholder: 'last name'
         }
       ]
