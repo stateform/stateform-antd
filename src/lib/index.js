@@ -2,21 +2,21 @@ import * as builtInComponents from './components'
 import './components.styl'
 import BaseStateForm from './StateForm'
 
-function createStateForm({upload = {}, components}) {
-
+function createStateForm(options = {}) {
+  const {upload = {}, components} = options
   class Upload extends builtInComponents.Upload {
     onUpload = upload.handleUpload
     onRemove = upload.handleRemove
   }
 
-  class UploadMulti extends builtInComponents.UploadMulti {
+  class UploadList extends builtInComponents.UploadList {
     onUpload = upload.handleUpload
     onRemove = upload.handleRemove
   }
 
   const finalComponents  = Object.assign({}, builtInComponents, {
     Upload,
-    UploadMulti
+    UploadList
   }, components)
 
   class StateForm extends BaseStateForm {

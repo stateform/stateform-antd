@@ -12,7 +12,7 @@ import Select from './Select'
 import Switch from './Switch'
 import Textarea from './Textarea'
 import Upload from './Upload'
-import UploadMulti from './UploadMulti'
+import UploadList from './UploadList'
 
 export {
   BoolCheck,
@@ -29,5 +29,5 @@ export {
   Switch,
   Textarea,
   Upload,
-  UploadMulti
+  UploadList
 }

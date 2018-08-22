@@ -36,6 +36,7 @@ export default class BaseUpload extends React.Component {
     return (result) => {
       Object.assign(fileItem, {
         status: result.status,
+        name: fileItem.name,
         value: result.value,
         url: result.url,
         thumbUrl: result.thumbUrl,

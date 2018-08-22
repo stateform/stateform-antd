@@ -261,11 +261,11 @@ export default {
       required: true,
     },
     {
-      path: '/uploadMulti',
-      component: 'UploadMulti',
+      path: '/uploadList',
+      component: 'UploadList',
       listType: 'text',
       uploadText: 'Upload',
-      label: 'UploadMulti',
+      label: 'UploadList',
       required: true,
     }
   ]
