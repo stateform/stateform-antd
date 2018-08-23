@@ -82,7 +82,7 @@ interface FileItem {
 }
 ```
 Example  
-see [QuickStart](#quickstart)
+see [QuickStart](#quick-start)
 
 ### `FormItemLayout`  
 You can use this component in your custom component   
