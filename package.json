@@ -3,6 +3,7 @@
   "version": "0.1.7",
   "author": "William17 <superbill2012@qq.com> https://github.com/William17",
   "main": "dist/stateform-antd.js",
+  "types": "index.d.ts",
   "description": "StateForm implementation of Antd",
   "keywords": [
     "stateform",
