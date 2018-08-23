@@ -84,6 +84,10 @@ export default class StateFormItemLayout extends React.Component {
         <Col
           span={cols.item.span}
           offset={cols.item.offset}
+          xs={cols.xsItem}
+          sm={cols.smItem}
+          md={cols.mdItem}
+          lg={cols.lgItem}
           className={cls({
             'sf-item': true,
             'sf-item--inline': true,
