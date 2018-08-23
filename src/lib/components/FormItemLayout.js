@@ -7,7 +7,7 @@ export default class StateFormItemLayout extends React.Component {
     const cols = props.cols
     const {layout, label, error, required, help, children, className} = props
     const {item: itemCols, label: labelCols, wrapper: wrapperCols} = cols
-    if (typeof item !== 'object') {
+    if (typeof itemCols !== 'object') {
       cols.item = {
         span: itemCols
       }
