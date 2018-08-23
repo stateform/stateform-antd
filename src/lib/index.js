@@ -1,4 +1,5 @@
 import * as builtInComponents from './components'
+import FormItemLayout from './components/FormItemLayout'
 import './components.styl'
 import BaseStateForm from './StateForm'
 
@@ -27,4 +28,4 @@ function createStateForm(options = {}) {
 }
 
 export default createStateForm
-export {createStateForm}
+export {createStateForm, FormItemLayout}
