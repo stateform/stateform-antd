@@ -1,6 +1,6 @@
 {
   "name": "@stateform/antd",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "William17 <superbill2012@qq.com> https://github.com/William17",
   "main": "dist/stateform-antd.js",
   "types": "index.d.ts",
