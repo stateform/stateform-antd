@@ -6,13 +6,13 @@ declare module "StateFormAntd" {
   interface StateFormProps {
     state: StateForm.Form;
   }
-  interface StateForm extends React.Component<StateFormProps>{
+  interface StateFormComponent extends React.Component<StateFormProps>{
   }
 
 
   export interface StateFormOptions {
     upload?: {
-      handleUpload: (file: File, cb: UploadCallback) => void;
+      handleUpload: (file: File, props: any, cb: UploadCallback) => void;
       handleRemove: (file: FileItem) => void;
     },
     components?: {
@@ -47,6 +47,6 @@ declare module "StateFormAntd" {
 
   }
 
-  export type createStateForm = (options?: StateFormOptions) => StateForm
+  export type createStateForm = (options?: StateFormOptions) => StateFormComponent
   export = createStateForm
 }

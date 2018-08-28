@@ -13,7 +13,7 @@ export default class UploadSingle extends BaseUpload {
         fileList: [currentFile]
       }
     })
-    this.onUpload(file, this.createUploadCallback(currentFile))
+    this.onUpload(file, this.props, this.createUploadCallback(currentFile))
     return false
   }
 }

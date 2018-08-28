@@ -21,7 +21,7 @@ export default class BaseUpload extends React.Component {
         fileList: fileList.concat(currentFile)
       }
     })
-    this.onUpload(file, this.createUploadCallback(currentFile))
+    this.onUpload(file, this.props, this.createUploadCallback(currentFile))
     return false
   }
   onUpload(file, cb) {
