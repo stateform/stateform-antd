@@ -1,6 +1,5 @@
 import React from 'react';
 import {Icon, Button} from 'antd'
-import FormItemLayout from './FormItemLayout'
 import FormItem from './FormItem'
 export default class StateList extends FormItem {
   addItem = () => {
@@ -34,14 +33,14 @@ export default class StateList extends FormItem {
       )
     })
     return (
-      <FormItemLayout className="sf-item--list" {...props}>
+      <div>
         { children }
         { isAddable !== false && (
           <Button block type="dashed" onClick={this.addItem}>
             <Icon type="plus" /> {addText || 'Add Item'}
           </Button>
         )}
-      </FormItemLayout>
+      </div>
     )
   }
 }

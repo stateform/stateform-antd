@@ -3,6 +3,7 @@ import createStateForm from './lib'
 import 'antd/dist/antd.css'
 import './App.styl'
 import formState from './formState'
+import { Slider } from 'antd'
 const StateForm = createStateForm({
   upload: {
     handleUpload: (file, cb) => {
@@ -41,16 +42,21 @@ class App extends Component {
   handleInput = (path, value, index) => {
     console.log(path, value)
   }
+  handleSlideChange = (value) => {
+    this.refs.form.props.onInput('/slider', value)
+  }
   render() {
     return (
       <div className="main-form">
         <h1 className="main-form__title"> StateForm</h1>
         <StateForm
+          ref="form"
           state={this.state.formState}
           onInput={this.handleInput}
           onSubmit={this.handleSubmit}
         >
-          <button>Custom Submit</button>
+          <Slider key='/custom' onChange={this.handleSlideChange}>
+          </Slider>
         </StateForm>
       </div>
     )

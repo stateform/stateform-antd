@@ -1,6 +1,5 @@
 import React from 'react';
 import {Checkbox} from 'antd';
-import FormItemLayout from './FormItemLayout'
 import FormItem from './FormItem'
 export default class StateCheckbox extends FormItem {
 
@@ -9,8 +8,7 @@ export default class StateCheckbox extends FormItem {
     const {content, disabled} = props
     const value = state.value === true ? [true] : []
     return (
-      <FormItemLayout className="sf-item--boolcheck" {...props}>
-       <Checkbox.Group
+      <Checkbox.Group
           value={value}
           disabled={disabled}
           onChange={(val) => handleInput(val[0] === true ? true : false)}
@@ -21,8 +19,7 @@ export default class StateCheckbox extends FormItem {
           >
           </span>
         </Checkbox>
-        </Checkbox.Group>
-      </FormItemLayout>
+      </Checkbox.Group>
     )
   }
 }

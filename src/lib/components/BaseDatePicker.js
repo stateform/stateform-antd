@@ -1,6 +1,5 @@
 import React from 'react';
 import {DatePicker} from 'antd';
-import FormItemLayout from './FormItemLayout'
 import moment from 'moment'
 export default class StateDatePicker extends React.Component {
   type = 'date'
@@ -60,17 +59,15 @@ export default class StateDatePicker extends React.Component {
         ? 'YYYY-MM-DD HH:mm:ss'
         : 'YYYY-MM-DD')
     return (
-      <FormItemLayout className="sf-item--datepicker" {...props}>
-        <DatePicker i
-          allowClear={true}
-          value={state.inputValue}
-          format={finalFormat}
-          showTime={type === 'datetime'}
-          placeholder={placeholder}
-          disabled={disabled}
-          onChange={handleInput}
-        />
-      </FormItemLayout>
+      <DatePicker i
+        allowClear={true}
+        value={state.inputValue}
+        format={finalFormat}
+        showTime={type === 'datetime'}
+        placeholder={placeholder}
+        disabled={disabled}
+        onChange={handleInput}
+      />
     )
   }
 }

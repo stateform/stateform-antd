@@ -1,6 +1,5 @@
 import React from 'react';
 import {Upload, Button, Icon} from 'antd';
-import FormItemLayout from './FormItemLayout'
 
 export default class BaseUpload extends React.Component {
   isMultiple = true
@@ -111,7 +110,6 @@ export default class BaseUpload extends React.Component {
       )
     }
     return (
-      <FormItemLayout className="sf-item--upload" {...props}>
         <Upload
           action="_blank"
           accept={accept}
@@ -124,7 +122,6 @@ export default class BaseUpload extends React.Component {
         >
         { uploadButton }
         </Upload>
-      </FormItemLayout>
     )
   }
 }

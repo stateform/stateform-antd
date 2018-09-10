@@ -1,6 +1,5 @@
 import React from 'react';
 import {Checkbox} from 'antd';
-import FormItemLayout from './FormItemLayout'
 import FormItem from './FormItem'
 export default class StateCheckbox extends FormItem {
 
@@ -8,12 +7,11 @@ export default class StateCheckbox extends FormItem {
     const {state, props, handleInput} = this
     const {option, disabled, disabledItems = {}} = props
     return (
-      <FormItemLayout className="sf-item--checkbox" {...props}>
-       <Checkbox.Group
-          value={state.value}
-          disabled={disabled}
-          onChange={handleInput}
-        >
+      <Checkbox.Group
+        value={state.value}
+        disabled={disabled}
+        onChange={handleInput}
+      >
           {Object.keys(option).map((label) => (
             <Checkbox
               key={label}
@@ -23,8 +21,7 @@ export default class StateCheckbox extends FormItem {
               {label}
             </Checkbox>
           ))}
-        </Checkbox.Group>
-      </FormItemLayout>
+      </Checkbox.Group>
     )
   }
 }

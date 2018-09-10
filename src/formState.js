@@ -6,18 +6,25 @@ export default {
     label: 5,
     wrapper: 18
   },
-  submitCols: {
-    label: 0,
-    wrapper: 24
+  footer: {
+    cols: {
+      label: 0,
+      wrapper: 24
+    },
+    showSubmit: true,
+    disableSubmit: true,
+    submitText: 'Submit Text',
   },
-  submitText: 'Submit Text',
-  showSubmit: true,
   children: [
     {
       path: '/boolcheck',
       component: 'BoolCheck',
       label: 'BoolCheck',
       content: 'Agree to <a href="#">link</a>'
+    },
+    {
+      path: '/custom',
+      label: 'Custom'
     },
     {
       path: '/checkbox',
