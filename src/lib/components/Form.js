@@ -18,8 +18,9 @@ export default class StateForm extends Component {
             >
               {
                 (footer.showSubmit === true) && (
-                  <Button 
+                  <Button
                     className="sf-footer__submit"
+                    type="primary"
                     onClick={props.onSubmit}
                     disabled={footer.disableSubmit}
                   >
@@ -29,7 +30,7 @@ export default class StateForm extends Component {
               }
               {
                 (footer.showReset === true ) && (
-                  <Button 
+                  <Button
                     className="sf-footer__reset"
                     onClick={props.onReset}
                     disabled={footer.disableReset}
